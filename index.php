@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tugas 4</title>
+  <title>index</title>
   <style type="text/css">
     body {
       background-color: aqua;
@@ -40,80 +40,78 @@
   <a href="http://informatika.ubpkarawang.ac.id/" target="_blank">Informatika |</a>
   <hr>
 
-  <h2>FORM PEMBUATAN KARTU TANDA PENDUDUK (KTP)</h2>
+  <h2 style="text-align: center; text-decoration: underline;;">FORM PEMBUATAN KARTU TANDA PENDUDUK (KTP)</h2>
 
-  <form action="tampil.php" method="POST">
-    <table>
+  <table style="width:30%;text-align:left;border:none groove;">
+    <form action="tampil.php" method="post">
       <tr>
-        <td>Nama</td>
-        <td>:</td>
-        <td><input type="text" name="nama" autofocus></td>
+        <th>Nama
+          <br>
+        <th> : <input type="text" name="nama"></th>
+        </th>
       </tr>
       <tr>
-        <td>TTL</td>
-        <td>:</td>
-        <td><input type="text" name="ttl"></td>
+        <th>TTL</th>
+        <th> : <input type="text" name="ttl"></th>
+      </tr>
+      <th>Jenis Kelamin</th>
+      <th> : <select name="kelamin" size="1" single>
+          <option value="perempuan" selected="selected">Perempuan</option>
+          <option value="laki-laki" selected="selected">Laki-laki</option>
+        </select>
+      </th>
+      <tr>
+        <th>Alamat
+        <th> : <input type="text" name="alamat"></th>
+        </th>
       </tr>
       <tr>
-        <td>Jenis Kelamin</td>
-        <td>:</td>
-        <td><input type=text list=kelamin>
-          <datalist id=kelamin>
-            <option value="Laki-Laki">
-            <option value="Perempuan">
-          </datalist>
-        </td>
+        <th>RT/RW
+        <th> : <input type="text" name="rt/rw"></th>
+        </th>
       </tr>
       <tr>
-        <td>Alamat</td>
-        <td>:</td>
-        <td><input type="text" name="alamat"></td>
+        <th>Desa/Kelurahan
+        <th> : <input type="text" name="desa/kelurahan"></th>
+        </th>
       </tr>
       <tr>
-        <td>Rt/Rw</td>
-        <td>:</td>
-        <td><input type="text" name="rtrw"></td>
+        <th>Kecamatan
+        <th> : <input type="text" name="kecamatan"></th>
+        </th>
       </tr>
       <tr>
-        <td>Desa/Kel</td>
-        <td>:</td>
-        <td><input type="text" name="desa"></td>
+        <th>Kabupaten
+        <th> : <input type="text" name="kabupaten"></th>
+        </th>
+      </tr>
+      <th>Agama</th>
+      <th> : <select name="agama" size="1" single>
+          <option value="kristen" selected="selected">Kristen</option>
+          <option value="katolik" selected="selected">Katolik</option>
+          <option value="budha" selected="selected">Budha</option>
+          <option value="konghucu" selected="selected">Konghucu</option>
+          <option value="islam" selected="selected">Islam</option>
+        </select>
+      </th>
+      <tr>
+        <th>Status Perkawinan
+        <th> : <input name="status" type="radio" value="kawin" checked> Kawin
+          <input type="radio" name="status" value="belum kawin" checked> Belum Kawin</th>
+        </th>
       </tr>
       <tr>
-        <td>Kec</td>
-        <td>:</td>
-        <td><input type="text" name="kecamatan"></td>
+        <th>Pekerjaan
+        <th> : <input type="text" name="kerjaan"></th>
+        </th>
       </tr>
       <tr>
-        <td>Agama</td>
-        <td>:</td>
-        <td><input type=text list=agama>
-          <datalist id=agama>
-            <option value="ISLAM">
-            <option value="KHATOLIK">
-            <option value="PROTESTAN">
-            <option value="HINDU">
-            <option value="BUDHA">
-            <option value="KONGHUTCHU">
-          </datalist>
-        </td>
+        <th>
+        <th><input type="submit" value="Submit"></th>
+        </th>
       </tr>
-      <tr>
-        <td>Status Perkawinan</td>
-        <td>:</td>
-        <td>
-          <input type='radio' name='kawin' value='kawin' checked='UNchecked' />Kawin
-          <input type='radio' name='belum kawin' value='belum kawin' />Belum Kawin <br>
-        </td>
-      </tr>
-      <tr>
-        <td>Pekerjaan</td>
-        <td>:</td>
-        <td><input type="text" name="pekerjaan"> <br>
-          <input type="submit" name="submit"></td>
-      </tr>
-    </table>
-  </form>
+    </form>
+  </table>
   <hr>
   <p>&copy;Pemrograman Web 2020</p>
 </body>
